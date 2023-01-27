@@ -65,7 +65,6 @@ p {
 .ctn-mid {
     width: 55%;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 .ctn-mid h2 {
@@ -134,12 +133,12 @@ header .nav-right ul li {
 
 .jumbo-section {
     background-color:  #b4d0e7;
-    margin-top: 63px;
+    margin-bottom: 63px;
 }
 
 .jumbo-section .jumbo-top {
     position: relative;
-    top: 80px;
+    top: 140px;
     padding: 0 100px;
     text-align: left;
 }
@@ -178,7 +177,7 @@ header .nav-right ul li {
 .jumbo-bottom .jumbo-left button {
     background-color: transparent;
     color: black;
-    margin-top: 40px;
+    margin-top: 100px;
     border: 0;
 }
 
@@ -188,15 +187,138 @@ header .nav-right ul li {
 
 /* Section 2*/
 
-.section-two {
-    padding: 130px 0;
+main section:nth-of-type(1n+1) {
+    padding: 80px 0;
 }
 
 .section-two label input {
     margin-bottom: 40px;
+    vertical-align: top;
+}
+
+.subscription-plans {
+    margin: 0 -10px;
+}
+
+.plan {
+    flex: 1;
+    width: calc(100% / 3 - 10px);
+    margin: 10px;
+    border: 1px solid lightgrey;
+}
+
+.subscription-plans .plan .plan-title,
+.client-service .title {
+    font-size: 1.3rem;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    padding: 8px 0;
+}
+
+.subscription-plans .plan .plan-info {
+    padding: 20px 25px;
+}
+
+.subscription-plans .plan h3,
+.client-service .info .info-left h3 {
+    font-size: 2rem;
+}
+
+.subscription-plans .plan h4 {
+    font-weight: 700;
+}
+
+.subscription-plans .plan hr {
+    width: 60px;
+    background-color: #f0f0f1;
+}
+
+.subscription-plans .plan > div {
+    font-size: 1.4rem;
+}
+
+.subscription-plans .plan div > .primary,
+.client-service .info .info-right div > .primary {
+    padding: 10px 20px;
+}
+
+.subscription-plans .plan div > .buy {
+    text-decoration: underline;
+    color: #8110f0;
+}
+
+.subscription-plans .plan div > .fa-check {
+    color: #8110f0;
+}
+
+.subscription-plans .plan div > p {
     display: inline;
 }
 
+.space {
+    margin-bottom: 20px;
+}
+
+.big-space {
+    margin-bottom: 40px;
+}
+
+.client-service {
+    margin-top: 30px;
+     border: 1px solid lightgrey;
+}
+
+.client-service > .info {
+    padding: 40px;
+}
+
+.client-service .info .info-left h4 {
+    font-size: 1.3rem;
+}
+
+.client-service .info .info-left {
+    width: 60%;
+}
+
+.client-service .info .info-right {
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.client-service .info .info-right > div {
+    margin-top: 10px;
+}
+
+/* Section 3*/
+
+.section-three .left {
+    width: 60%;
+}
+
+.section-three .left img {
+    width: 100%;
+}
+
+.section-three .right {
+    padding: 40px;
+    width: 40%;
+}
+
+.section-three .right h3 {
+    font-size: 3rem;
+}
+
+
+.section-three .right p {
+    font-size: 1.6rem;
+    line-height: 25px;
+}
+
+.section-three .right a > button {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px 16px;
+}
 
 
 
