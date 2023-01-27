@@ -24,6 +24,11 @@ body {
     display: flex;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
 a {
     text-decoration: none;
     font-size: 1.3rem;
@@ -31,6 +36,10 @@ a {
 }
 
 a:hover {
+    cursor: pointer;
+}
+
+button:hover {
     cursor: pointer;
 }
 
@@ -44,15 +53,36 @@ ul li {
     font-size: 1.3rem;
 }
 
+p {
+    font-size: 1.4rem;
+}
 
+.ctn-big {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.ctn-mid {
+    width: 55%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.ctn-mid h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
 
 
 /*************** HEADER *****************/
 
 header {
+    background-color: #fff;
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 400;
     top: 0;
     left: 0;
     right: 0;
@@ -76,7 +106,96 @@ header .nav-right ul li {
     padding: 5px 10px;
 }
 
+.nav-left ul li,
+.nav-right ul li  {
+    position: relative;
+}
+
+.nav-left ul li a::after,
+.nav-right ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    height: 0.125em;
+    background: black;
+    bottom: -0.25em;
+    transition: ease .40s;
+}
+
+.nav-left ul li a:hover::after,
+.nav-right ul li a:hover::after {
+    width: 100%;
+}
+
 /*************** MAIN *****************/
+
+/* Jumbotron */
+
+.jumbo-section {
+    background-color:  #b4d0e7;
+    margin-top: 63px;
+}
+
+.jumbo-section .jumbo-top {
+    position: relative;
+    top: 80px;
+    padding: 0 100px;
+    text-align: left;
+}
+
+.jumbo-section .jumbo-top h1 {
+    font-size: 7rem;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.jumbo-section .jumbo-bottom .jumbo-left {
+    width: 30%;
+}
+
+.jumbo-section .jumbo-bottom .jumbo-right {
+    width: 70%;
+}
+
+.jumbo-bottom .jumbo-right img {
+    width: 100%;
+}
+
+.jumbo-bottom .jumbo-left p:nth-of-type(1) {
+    margin-bottom: 35px;
+    line-height: 20px;
+}
+
+.jumbo-bottom .jumbo-left p:nth-of-type(2) {
+    margin-top: 35px;
+}
+
+.jumbo-bottom .jumbo-left a {
+    padding: 10px 20px;
+}
+
+.jumbo-bottom .jumbo-left button {
+    background-color: transparent;
+    color: black;
+    margin-top: 40px;
+    border: 0;
+}
+
+.jumbo-bottom .jumbo-left button i {
+    font-size: 5rem;
+}
+
+/* Section 2*/
+
+.section-two {
+    padding: 130px 0;
+}
+
+.section-two label input {
+    margin-bottom: 40px;
+    display: inline;
+}
 
 
 
