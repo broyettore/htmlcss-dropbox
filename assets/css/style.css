@@ -358,29 +358,29 @@ main section:nth-of-type(1n+1) {
     color: #0b0ef2;
 }
 
-/* Section 5*/
+/* Section 6*/
 
-.section-six .left,
-.section-six .center,
-.section-six .right {
+.section-six .top .left,
+.section-six .top .center,
+.section-six .top .right {
     width: calc(100vw / 3);
     height: 70vh;
 }
 
-.section-six .left,
-.section-six .right {
+.section-six .top .left,
+.section-six .top .right {
     flex-wrap: wrap;
 }
 
-.section-six .left div,
-.section-six .right div {
+.section-six .top .left div,
+.section-six .top .right div {
     width: calc(100% / 2);
     height: 50%;
     position: relative;
 }
 
-.section-six .left div img,
-.section-six .right div img {
+.section-six .top .left div img,
+.section-six .top .right div img {
     width: 50%;
     position: absolute;
     top: 50%;
@@ -405,22 +405,22 @@ main section:nth-of-type(1n+1) {
     background-color: #ff1c1c;
 }
 
-.section-six .center {
+.section-six .top .center {
     background-color: #f5f5f5;
     padding: 50px;
 }
 
-.section-six .center div > img {
+.section-six .top  .center div > img {
     width: 50%;
 }
 
-.section-six .center hr {
+.section-six .top .center hr {
     width: 20%;
     color: lightgrey;
 }
 
-.section-six .center p,
-.section-six .center span {
+.section-six .top .center p,
+.section-six .top .center span {
     font-size: 1.6rem;
 }
 
@@ -440,6 +440,55 @@ main section:nth-of-type(1n+1) {
     background-color :#ffd830;
 }
 
+.section-six .bottom {
+    background-color: #b4d0e7;
+    height: 30vh;
+    align-items: center;
+}
+
+.section-six .bottom > div {
+    justify-content: space-between;
+}
+
+.section-six .bottom h2 {
+    font-size: 4rem;
+    margin: 0;
+    width: 50%;
+}
+
+.section-six .bottom a > button {
+    background-color: #fff;
+    color: #000;
+    padding: 12px 28px;
+    border: 0;
+}
+
+/* Section 7*/
+
+.section-seven h2 {
+    font-size: 4rem;
+}
+
+.section-seven .faq {
+    justify-content: space-between;
+    padding: 40px 0;
+    border-bottom: 1px solid #000;
+}
+
+.section-seven .faq:nth-of-type(1){
+    border-top: 1px solid #000;
+}
+
+.section-seven .faq h4 {
+    font-size: 1.6rem;
+}
+
+.section-seven .faq button  {
+    font-size: 1.2rem;
+    margin-right: 30px;
+    border: 0;
+    background-color: transparent;
+}
 /*************** FOOTER *****************/
 
 
