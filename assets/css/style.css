@@ -475,8 +475,7 @@ main section:nth-of-type(1n+1) {
 }
 
 .section-seven .faq {
-    justify-content: space-between;
-    padding: 40px 0;
+    padding: 30px 0;
     border-bottom: 1px solid #000;
 }
 
@@ -484,16 +483,24 @@ main section:nth-of-type(1n+1) {
     border-top: 1px solid #000;
 }
 
-.section-seven .faq h4 {
+.section-seven .faq-top {
+    justify-content: space-between;
+}
+
+.section-seven .faq-top h4,
+.section-seven .faq .text-pop {
     font-size: 1.6rem;
 }
 
-.section-seven .faq button  {
+.section-seven .faq-top button {
     font-size: 1.2rem;
     margin-right: 30px;
     border: 0;
+    padding: 5px;
     background-color: transparent;
 }
+
+
 /*************** FOOTER *****************/
 
 footer {
