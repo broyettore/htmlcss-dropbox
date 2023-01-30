@@ -32,7 +32,7 @@ body {
 a {
     text-decoration: none;
     font-size: 1.3rem;
-     color: black;
+    color: black;
 }
 
 a:hover {
@@ -47,7 +47,7 @@ ul li {
     list-style-type: none;
 }
 
-.primary {
+.btn-primary {
     background-color: #0061ff;
     color: #fff;
     font-size: 1.3rem;
@@ -73,6 +73,18 @@ p {
     margin-bottom: 40px;
 }
 
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
 
 /*************** HEADER *****************/
 
@@ -87,7 +99,8 @@ header {
     right: 0;
 }
 
-header .nav-left ul {
+header .nav-left ul,
+header .nav-right ul {
     align-items: center;
 }
 
@@ -103,6 +116,7 @@ header .nav-right ul li {
 
 .nav-right ul li .nav-btn {
     padding: 5px 10px;
+    border: 0;
 }
 
 .nav-left ul li,
@@ -144,9 +158,8 @@ header .nav-right ul li {
 }
 
 .jumbo-section .jumbo-top h1 {
-    font-size: 7rem;
+    font-size: 8rem;
     font-weight: 900;
-    margin-bottom: 40px;
 }
 
 .jumbo-section .jumbo-bottom .jumbo-left {
@@ -162,22 +175,20 @@ header .nav-right ul li {
 }
 
 .jumbo-bottom .jumbo-left p:nth-of-type(1) {
-    margin-bottom: 35px;
     line-height: 20px;
 }
 
-.jumbo-bottom .jumbo-left p:nth-of-type(2) {
-    margin-top: 35px;
-}
 
-.jumbo-bottom .jumbo-left a {
+.jumbo-bottom .jumbo-left a > .btn-primary {
+    background-color: #0061ff;
+    color: #fff;
+    font-size: 1.3rem;
     padding: 10px 20px;
 }
 
 .jumbo-bottom .jumbo-left button {
     background-color: transparent;
     color: black;
-    margin-top: 100px;
     border: 0;
 }
 
@@ -237,30 +248,23 @@ main section:nth-of-type(1n+1) {
     font-size: 1.4rem;
 }
 
-.subscription-plans .plan div > .primary,
-.client-service .info .info-right div > .primary {
+.subscription-plans .plan ul li a > .btn-primary,
+.client-service .info .info-right div a > .btn-primary {
     padding: 10px 20px;
+    border: 0;
 }
 
-.subscription-plans .plan div > .buy {
+.subscription-plans .plan ul li > .buy {
     text-decoration: underline;
     color: #8110f0;
 }
 
-.subscription-plans .plan div > .fa-check {
+.subscription-plans .plan ul li > .fa-check {
     color: #8110f0;
 }
 
-.subscription-plans .plan div > p {
+.subscription-plans .plan ul li > p {
     display: inline;
-}
-
-.space {
-    margin-bottom: 20px;
-}
-
-.big-space {
-    margin-bottom: 40px;
 }
 
 .client-service {
@@ -320,6 +324,38 @@ main section:nth-of-type(1n+1) {
     padding: 10px 16px;
 }
 
+/* Section 4*/
+
+.drop-business-ctn {
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.drop-business-ctn .item {
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+}
+
+.drop-business-ctn .item img {
+    width: 100%;
+}
+
+.drop-business-ctn .item h3 {
+    font-size: 2.4rem;
+}
+
+
+/* Section 5*/
+
+.section-five h2 {
+    font-size: 3.5rem;
+    line-height: 45px;
+}
+
+.section-five a {
+    text-decoration: underline;
+    color: #0b0ef2;
+}
 
 
 /*************** FOOTER *****************/
