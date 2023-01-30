@@ -263,6 +263,7 @@ main section:nth-of-type(1n+1) {
     color: #8110f0;
 }
 
+
 .subscription-plans .plan ul li > p {
     display: inline;
 }
@@ -357,6 +358,87 @@ main section:nth-of-type(1n+1) {
     color: #0b0ef2;
 }
 
+/* Section 5*/
+
+.section-six .left,
+.section-six .center,
+.section-six .right {
+    width: calc(100vw / 3);
+    height: 70vh;
+}
+
+.section-six .left,
+.section-six .right {
+    flex-wrap: wrap;
+}
+
+.section-six .left div,
+.section-six .right div {
+    width: calc(100% / 2);
+    height: 50%;
+    position: relative;
+}
+
+.section-six .left div img,
+.section-six .right div img {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-six .left .sponsor-1 {
+    background-color: #a2d39b;
+    border: 15px solid #d1e9cd;
+}
+
+.section-six .left .sponsor-2 {
+    background-color: #61082b;
+}
+
+.section-six .left .sponsor-3 {
+    background-color: #0093ce;
+}
+
+.section-six .left .sponsor-4 {
+    background-color: #ff1c1c;
+}
+
+.section-six .center {
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+
+.section-six .center div > img {
+    width: 50%;
+}
+
+.section-six .center hr {
+    width: 20%;
+    color: lightgrey;
+}
+
+.section-six .center p,
+.section-six .center span {
+    font-size: 1.6rem;
+}
+
+.section-six .right .sponsor-5 {
+    background-color :#d5001f;
+}
+
+.section-six .right .sponsor-6 {
+    background-color :#b4d0e7;
+}
+
+.section-six .right .sponsor-7 {
+    background-color :#0d2481;
+}
+
+.section-six .right .sponsor-8 {
+    background-color :#ffd830;
+}
 
 /*************** FOOTER *****************/
 
