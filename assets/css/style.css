@@ -363,8 +363,8 @@ main section:nth-of-type(1n+1) {
 .section-six .top .left,
 .section-six .top .center,
 .section-six .top .right {
-    width: calc(100vw / 3);
-    height: 70vh;
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
 }
 
 .section-six .top .left,
@@ -374,8 +374,8 @@ main section:nth-of-type(1n+1) {
 
 .section-six .top .left div,
 .section-six .top .right div {
-    width: calc(100% / 2);
     height: 50%;
+    width: 50%;
     position: relative;
 }
 
