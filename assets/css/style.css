@@ -23,18 +23,22 @@ body {
     display: flex;
 }
 
+.sp-btwn {
+    justify-content: space-between;
+}
+
 a {
     text-decoration: none;
-    font-size: 1.3rem;
     color: black;
 }
 
-a:hover {
+a:hover,
+button:hover {
     cursor: pointer;
 }
 
-button:hover {
-    cursor: pointer;
+a, .btn-primary {
+    font-size: 1.4rem;
 }
 
 ul li {
@@ -44,7 +48,7 @@ ul li {
 .btn-primary {
     background-color: #0061ff;
     color: #fff;
-    font-size: 1.3rem;
+    border: 0;
 }
 
 p {
@@ -100,7 +104,6 @@ main section:not(.jumbo-section) {
 
 header:not(.subscription-plans .plan > header) {
     background-color: #fff;
-    justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 400;
@@ -129,7 +132,6 @@ header .nav-right ul li {
 
 .nav-right ul li .nav-btn {
     padding: 5px 10px;
-    border: 0;
 }
 
 .nav-left ul li,
@@ -184,16 +186,8 @@ header .nav-right ul li {
 }
 
 
-.jumbo-bottom .jumbo-left a > .btn-primary {
-    background-color: #0061ff;
-    color: #fff;
+.jumbo-bottom .jumbo-left  a > .btn-primary {
     padding: 10px 20px;
-}
-
-.jumbo-bottom .jumbo-left button {
-    background-color: transparent;
-    color: black;
-    border: 0;
 }
 
 .jumbo-bottom .jumbo-left button i {
@@ -202,7 +196,7 @@ header .nav-right ul li {
     font-size: 5rem;
 }
 
-/* Section 2*/
+/************************* Section 2 *******************/
 
 
 
@@ -213,10 +207,6 @@ header .nav-right ul li {
 .section-two label input {
     margin-bottom: 40px;
     vertical-align: top;
-}
-
-.subscription-plans {
-    justify-content: space-between;
 }
 
 .plan,
@@ -256,7 +246,6 @@ header .nav-right ul li {
 .subscription-plans .plan ul li a > .btn-primary,
 .client-service .info .info-right div a > .btn-primary {
     padding: 10px 20px;
-    border: 0;
 }
 
 .subscription-plans .plan ul li > .buy,
@@ -284,11 +273,7 @@ header .nav-right ul li {
     justify-content: flex-end;
 }
 
-/* Section 3*/
-
-.section-three {
-    justify-content: space-between;
-}
+/************************* Section 3 *******************/
 
 .section-three .left {
     width: 65%;
@@ -312,10 +297,9 @@ header .nav-right ul li {
     padding: 10px 16px;
 }
 
-/* Section 4*/
+/************************* Section 4 *******************/
 
 .drop-business-ctn {
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -323,8 +307,7 @@ header .nav-right ul li {
     width: 100%;
 }
 
-
-/* Section 5*/
+/************************* Section 5 *******************/
 
 .section-five h2 {
     line-height: 45px;
@@ -335,7 +318,7 @@ header .nav-right ul li {
     color: #0b0ef2;
 }
 
-/* Section 6*/
+/************************* Section 6 *******************/
 
 .section-six .top .left,
 .section-six .top .center,
@@ -428,10 +411,6 @@ header .nav-right ul li {
     align-items: center;
 }
 
-.section-six .bottom > div {
-    justify-content: space-between;
-}
-
 .section-six .bottom h2 {
     width: 50%;
 }
@@ -443,10 +422,9 @@ header .nav-right ul li {
     border: 0;
 }
 
-/* Section 7*/
+/************************* Section 7 *******************/
 
 .section-seven .faq {
-    justify-content: space-between;
     flex-wrap: wrap;
     padding: 30px 0;
     border-bottom: 1px solid #000;
@@ -495,7 +473,6 @@ footer {
 }
 
 .footer-top {
-    justify-content: space-between;
     padding: 50px 0;
 }
 
