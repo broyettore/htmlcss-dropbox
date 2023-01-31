@@ -9,8 +9,11 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*************** REUSABLE CLASSES *****************
@@ -45,27 +48,26 @@ ul li {
 }
 
 p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .ctn-big {
-    width: 70%;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
 .ctn-mid {
-    width: 55%;
+    max-width: 960px;
     margin: 0 auto;
 }
 
 .ctn-foot {
-    width: 60%;
+    max-width: 1040px;
     margin: 0 auto;
 }
 
 .ctn-mid h2 {
     font-size: 3.5rem;
-    font-weight: 700;
     margin-bottom: 40px;
 }
 
@@ -81,10 +83,22 @@ p {
     margin-bottom: 60px;
 }
 
+.w-30 {
+    width: 30%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+main section:not(.jumbo-section) {
+    padding: 80px 0;
+}
+
 
 /*************** HEADER *****************/
 
-header {
+header:not(.subscription-plans .plan > header) {
     background-color: #fff;
     justify-content: space-between;
     align-items: center;
@@ -146,27 +160,19 @@ header .nav-right ul li {
 
 .jumbo-section {
     background-color:  #b4d0e7;
-    margin-bottom: 63px;
+    margin-bottom: 40px;
+    padding-bottom: 80px;
 }
 
 .jumbo-section .jumbo-top {
     position: relative;
     top: 140px;
-    padding: 0 100px;
     text-align: left;
 }
 
 .jumbo-section .jumbo-top h1 {
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 900;
-}
-
-.jumbo-section .jumbo-bottom .jumbo-left {
-    width: 30%;
-}
-
-.jumbo-section .jumbo-bottom .jumbo-right {
-    width: 70%;
 }
 
 .jumbo-bottom .jumbo-right img {
@@ -181,7 +187,6 @@ header .nav-right ul li {
 .jumbo-bottom .jumbo-left a > .btn-primary {
     background-color: #0061ff;
     color: #fff;
-    font-size: 1.3rem;
     padding: 10px 20px;
 }
 
@@ -192,13 +197,17 @@ header .nav-right ul li {
 }
 
 .jumbo-bottom .jumbo-left button i {
+    position: absolute;
+    bottom: 70px;
     font-size: 5rem;
 }
 
 /* Section 2*/
 
-main section:nth-of-type(1n+1) {
-    padding: 80px 0;
+
+
+.section-two label {
+    margin-right: 20px;
 }
 
 .section-two label input {
@@ -207,45 +216,41 @@ main section:nth-of-type(1n+1) {
 }
 
 .subscription-plans {
-    margin: 0 -10px;
+    justify-content: space-between;
 }
 
-.plan {
-    flex: 1;
-    width: calc(100% / 3 - 10px);
-    margin: 10px;
+.plan,
+.client-service  {
     border: 1px solid lightgrey;
 }
 
 .subscription-plans .plan .plan-title,
 .client-service .title {
-    font-size: 1.3rem;
     text-align: center;
     border-bottom: 1px solid lightgrey;
     padding: 8px 0;
+}
+
+.subscription-plans .plan .plan-title,
+.client-service .title,
+.subscription-plans .plan > article,
+.subscription-plans .plan ul li > p,
+.client-service .info .info-left h4 {
+    font-size: 1.4rem;
 }
 
 .subscription-plans .plan .plan-info {
     padding: 20px 25px;
 }
 
-
 .subscription-plans .plan h3,
-.client-service .info .info-left h3 {
-    font-size: 2rem;
-}
-
-.subscription-plans .plan h4 {
-    font-weight: 700;
+.client-service .info .info-left h3,
+.drop-business-ctn .item h3 {
+    font-size: 2.2rem;
 }
 
 .subscription-plans .plan hr {
     width: 60px;
-    background-color: #f0f0f1;
-}
-
-.subscription-plans .plan > div {
-    font-size: 1.4rem;
 }
 
 .subscription-plans .plan ul li a > .btn-primary,
@@ -254,15 +259,14 @@ main section:nth-of-type(1n+1) {
     border: 0;
 }
 
-.subscription-plans .plan ul li > .buy {
-    text-decoration: underline;
-    color: #8110f0;
-}
-
+.subscription-plans .plan ul li > .buy,
 .subscription-plans .plan ul li > .fa-check {
     color: #8110f0;
 }
 
+.subscription-plans .plan ul li > .buy {
+    text-decoration: underline;
+}
 
 .subscription-plans .plan ul li > p {
     display: inline;
@@ -270,52 +274,35 @@ main section:nth-of-type(1n+1) {
 
 .client-service {
     margin-top: 30px;
-     border: 1px solid lightgrey;
 }
 
 .client-service > .info {
     padding: 40px;
 }
 
-.client-service .info .info-left h4 {
-    font-size: 1.3rem;
-}
-
-.client-service .info .info-left {
-    width: 60%;
-}
-
 .client-service .info .info-right {
     justify-content: flex-end;
-    width: 40%;
-}
-
-.client-service .info .info-right > div {
-    margin-top: 10px;
 }
 
 /* Section 3*/
 
+.section-three {
+    justify-content: space-between;
+}
+
 .section-three .left {
-    width: 60%;
+    width: 65%;
 }
 
 .section-three .left img {
     width: 100%;
 }
 
-.section-three .right {
-    padding: 40px;
-    width: 40%;
-}
-
-.section-three .right h3 {
+.section-three .right h2 {
     font-size: 3rem;
 }
 
-
 .section-three .right p {
-    font-size: 1.6rem;
     line-height: 25px;
 }
 
@@ -328,28 +315,18 @@ main section:nth-of-type(1n+1) {
 /* Section 4*/
 
 .drop-business-ctn {
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 -10px;
-}
-
-.drop-business-ctn .item {
-    width: calc(100% / 3 - 20px);
-    margin: 10px;
 }
 
 .drop-business-ctn .item img {
     width: 100%;
 }
 
-.drop-business-ctn .item h3 {
-    font-size: 2.4rem;
-}
-
 
 /* Section 5*/
 
 .section-five h2 {
-    font-size: 3.5rem;
     line-height: 45px;
 }
 
@@ -413,6 +390,7 @@ main section:nth-of-type(1n+1) {
 .section-six .top .center {
     background-color: #f5f5f5;
     padding: 50px;
+    overflow: auto;
 }
 
 .section-six .top  .center div > img {
@@ -424,7 +402,6 @@ main section:nth-of-type(1n+1) {
     color: lightgrey;
 }
 
-.section-six .top .center p,
 .section-six .top .center span {
     font-size: 1.6rem;
 }
@@ -456,8 +433,6 @@ main section:nth-of-type(1n+1) {
 }
 
 .section-six .bottom h2 {
-    font-size: 4rem;
-    margin: 0;
     width: 50%;
 }
 
@@ -469,10 +444,6 @@ main section:nth-of-type(1n+1) {
 }
 
 /* Section 7*/
-
-.section-seven h2 {
-    font-size: 4rem;
-}
 
 .section-seven .faq {
     padding: 30px 0;
@@ -520,6 +491,7 @@ footer {
 
 .footer-top .footer-top-item ul li {
     font-size: 1.4rem;
+    font-weight: 300;
     margin-bottom: 20px;
 }
 
